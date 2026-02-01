@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Wild Form Yoga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Wild Form Yoga</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Shop Collection</h1>
+                <p>Premium yoga mats shaped like endangered species</p>
+            </div>
+        </section>
+
+        <!-- Mission Reminder -->
+        <section class="shop-mission">
+            <div class="container">
+                <p><strong>10% of every purchase</strong> goes directly to wildlife conservation</p>
+            </div>
+        </section>
+
+        <!-- Shop Tabs -->
+        <div class="shop-tabs">
+            <div class="container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="adult">Adult</button>
+                    <button class="tab-btn" data-tab="kids">Kids</button>
+                    <button class="tab-btn" data-tab="bundles">Bundles</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adult Products Tab -->
+        <section class="shop-section tab-content active" id="adult-tab">
+            <div class="container">
+                <div class="shop-grid">
+                    <!-- Tiger Mat -->
+                    <div class="shop-product-card" data-product-id="tiger-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/tiger.jpg" alt="Tiger Mat - View 1" class="active">
+                                    <img src="images/tiger-2.jpg" alt="Tiger Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <span class="product-badge">Bestseller</span>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Tiger Mat</h3>
+                            <p class="product-description">Honor the majestic Bengal tiger with this striking mat. Eco-friendly materials, superior grip, and a powerful reminder of what we're protecting.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>72" x 26" (tiger silhouette shape)</li>
+                                <li>5mm thickness for joint support</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$150</span>
+                                <button class="btn btn-primary add-to-cart" data-product="tiger-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panda Mat -->
+                    <div class="shop-product-card" data-product-id="panda-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/panda.jpg" alt="Panda Mat - View 1" class="active">
+                                    <img src="images/panda-2.jpg" alt="Panda Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Panda Mat</h3>
+                            <p class="product-description">Celebrate conservation success with the gentle giant panda. A symbol of hope and the power of protection efforts.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>72" x 26" (panda silhouette shape)</li>
+                                <li>5mm thickness for joint support</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$150</span>
+                                <button class="btn btn-primary add-to-cart" data-product="panda-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gorilla Mat -->
+                    <div class="shop-product-card" data-product-id="gorilla-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/gorilla.jpg" alt="Gorilla Mat - View 1" class="active">
+                                    <img src="images/gorilla-2.png" alt="Gorilla Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Gorilla Mat</h3>
+                            <p class="product-description">Channel the quiet strength of the mountain gorilla. Each mat supports the protection of their forest habitats.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>72" x 26" (gorilla silhouette shape)</li>
+                                <li>5mm thickness for joint support</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$150</span>
+                                <button class="btn btn-primary add-to-cart" data-product="gorilla-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aztec Tiger Mat -->
+                    <div class="shop-product-card" data-product-id="aztec-tiger-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/aztec-tiger-2.png" alt="Aztec Tiger Mat - View 1" class="active" style="object-position: top;">
+                                    <img src="images/aztec-tiger.png" alt="Aztec Tiger Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <span class="product-badge">New</span>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Aztec Tiger Mat</h3>
+                            <p class="product-description">A bold fusion of ancient Aztec artistry and tiger power. This striking design brings cultural heritage to your practice.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>72" x 26" (tiger silhouette shape)</li>
+                                <li>5mm thickness for joint support</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$150</span>
+                                <button class="btn btn-primary add-to-cart" data-product="aztec-tiger-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids Products Tab -->
+        <section class="shop-section tab-content" id="kids-tab">
+            <div class="container">
+                <div class="shop-grid">
+                    <!-- Kids Tiger Mat -->
+                    <div class="shop-product-card" data-product-id="kids-tiger-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/tiger.jpg" alt="Kids Tiger Mat - View 1" class="active">
+                                    <img src="images/tiger-2.jpg" alt="Kids Tiger Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Kids Tiger Mat</h3>
+                            <p class="product-description">A smaller version of our beloved Tiger Mat, perfectly sized for young yogis. Same eco-friendly materials and quality.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>48" x 18" (tiger silhouette shape)</li>
+                                <li>4mm thickness for comfort</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$100</span>
+                                <button class="btn btn-primary add-to-cart" data-product="kids-tiger-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kids Panda Mat -->
+                    <div class="shop-product-card" data-product-id="kids-panda-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/panda.jpg" alt="Kids Panda Mat - View 1" class="active">
+                                    <img src="images/panda-2.jpg" alt="Kids Panda Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Kids Panda Mat</h3>
+                            <p class="product-description">The gentle panda, sized for little ones. Perfect for introducing children to yoga and conservation.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>48" x 18" (panda silhouette shape)</li>
+                                <li>4mm thickness for comfort</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$100</span>
+                                <button class="btn btn-primary add-to-cart" data-product="kids-panda-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kids Gorilla Mat -->
+                    <div class="shop-product-card" data-product-id="kids-gorilla-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/gorilla.jpg" alt="Kids Gorilla Mat - View 1" class="active">
+                                    <img src="images/gorilla-2.png" alt="Kids Gorilla Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Kids Gorilla Mat</h3>
+                            <p class="product-description">The mighty gorilla for your mighty little one. Built for durability and fun.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>48" x 18" (gorilla silhouette shape)</li>
+                                <li>4mm thickness for comfort</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$100</span>
+                                <button class="btn btn-primary add-to-cart" data-product="kids-gorilla-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kids Aztec Tiger Mat -->
+                    <div class="shop-product-card" data-product-id="kids-aztec-tiger-mat">
+                        <div class="product-image-large">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <img src="images/aztec-tiger-2.png" alt="Kids Aztec Tiger Mat - View 1" class="active">
+                                    <img src="images/aztec-tiger.png" alt="Kids Aztec Tiger Mat - View 2">
+                                </div>
+                                <button class="carousel-btn prev" aria-label="Previous image">&larr;</button>
+                                <button class="carousel-btn next" aria-label="Next image">&rarr;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Kids Aztec Tiger Mat</h3>
+                            <p class="product-description">Bold Aztec artistry in a kid-friendly size. A colorful companion for young practitioners.</p>
+                            <ul class="product-features">
+                                <li>Premium natural rubber base</li>
+                                <li>Non-slip microfiber top</li>
+                                <li>48" x 18" (tiger silhouette shape)</li>
+                                <li>4mm thickness for comfort</li>
+                            </ul>
+                            <div class="product-price-row">
+                                <span class="product-price">$100</span>
+                                <button class="btn btn-primary add-to-cart" data-product="kids-aztec-tiger-mat">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bundles Tab -->
+        <section class="shop-section tab-content" id="bundles-tab">
+            <div class="container">
+                <div class="bundle-builder">
+                    <div class="bundle-header">
+                        <h2>Build Your Family Bundle</h2>
+                        <p class="bundle-subtitle">Select one adult mat + one kids mat and save $20 + get FREE shipping!</p>
+                    </div>
+
+                    <div class="bundle-grid">
+                        <!-- Adult Mat Selection -->
+                        <div class="bundle-section">
+                            <h3>1. Choose Adult Mat - $150</h3>
+                            <div class="bundle-options">
+                                <label class="bundle-option">
+                                    <input type="radio" name="adult-mat" value="tiger" data-name="Tiger Mat">
+                                    <img src="images/tiger.jpg" alt="Tiger Mat">
+                                    <span>Tiger Mat</span>
+                                    <button type="button" class="details-btn" data-product="tiger-mat">Details</button>
+                                </label>
+                                <label class="bundle-option">
+                                    <input type="radio" name="adult-mat" value="panda" data-name="Panda Mat">
+                                    <img src="images/panda.jpg" alt="Panda Mat">
+                                    <span>Panda Mat</span>
+                                    <button type="button" class="details-btn" data-product="panda-mat">Details</button>
+                                </label>
+                                <label class="bundle-option">
+                                    <input type="radio" name="adult-mat" value="gorilla" data-name="Gorilla Mat">
+                                    <img src="images/gorilla.jpg" alt="Gorilla Mat">
+                                    <span>Gorilla Mat</span>
+                                    <button type="button" class="details-btn" data-product="gorilla-mat">Details</button>
+                                </label>
+                                <label class="bundle-option">
+                                    <input type="radio" name="adult-mat" value="aztec-tiger" data-name="Aztec Tiger Mat">
+                                    <img src="images/aztec-tiger-2.png" alt="Aztec Tiger Mat">
+                                    <span>Aztec Tiger Mat</span>
+                                    <button type="button" class="details-btn" data-product="aztec-tiger-mat">Details</button>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Kids Mat Selection -->
+                        <div class="bundle-section">
+                            <h3>2. Choose Kids Mat - <span class="price-strike">$100</span> $80</h3>
+                            <div class="bundle-options">
+                                <label class="bundle-option">
+                                    <input type="radio" name="kids-mat" value="tiger" data-name="Kids Tiger Mat">
+                                    <img src="images/tiger.jpg" alt="Kids Tiger Mat">
+                                    <span>Kids Tiger Mat</span>
+                                    <button type="button" class="details-btn" data-product="kids-tiger-mat">Details</button>
+                                </label>
+                                <label class="bundle-option">
+                                    <input type="radio" name="kids-mat" value="panda" data-name="Kids Panda Mat">
+                                    <img src="images/panda.jpg" alt="Kids Panda Mat">
+                                    <span>Kids Panda Mat</span>
+                                    <button type="button" class="details-btn" data-product="kids-panda-mat">Details</button>
+                                </label>
+                                <label class="bundle-option">
+                                    <input type="radio" name="kids-mat" value="gorilla" data-name="Kids Gorilla Mat">
+                                    <img src="images/gorilla.jpg" alt="Kids Gorilla Mat">
+                                    <span>Kids Gorilla Mat</span>
+                                    <button type="button" class="details-btn" data-product="kids-gorilla-mat">Details</button>
+                                </label>
+                                <label class="bundle-option">
+                                    <input type="radio" name="kids-mat" value="aztec-tiger" data-name="Kids Aztec Tiger Mat">
+                                    <img src="images/aztec-tiger-2.png" alt="Kids Aztec Tiger Mat">
+                                    <span>Kids Aztec Tiger Mat</span>
+                                    <button type="button" class="details-btn" data-product="kids-aztec-tiger-mat">Details</button>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bundle Summary -->
+                    <div class="bundle-summary">
+                        <div class="bundle-summary-details">
+                            <p class="bundle-selection"><strong>Adult Mat:</strong> <span id="selected-adult">Not selected</span></p>
+                            <p class="bundle-selection"><strong>Kids Mat:</strong> <span id="selected-kids">Not selected</span></p>
+                        </div>
+                        <div class="bundle-pricing">
+                            <p class="bundle-total">Bundle Total: <strong>$230</strong></p>
+                            <p class="bundle-savings">You save $20 + FREE shipping!</p>
+                            <button class="btn btn-primary" id="add-bundle-to-cart" disabled>Add Bundle to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Info Section -->
+        <section class="product-info-section">
+            <div class="container">
+                <h2 class="section-title">Why Wild Form Mats?</h2>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">🌿</div>
+                        <h3>Eco-Friendly Materials</h3>
+                        <p>Natural rubber base and recycled materials. No PVC, no toxic chemicals.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🤝</div>
+                        <h3>Conservation Impact</h3>
+                        <p>10% of every sale directly funds wildlife protection and habitat preservation.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✨</div>
+                        <h3>Premium Quality</h3>
+                        <p>Superior grip, cushioning, and durability for all styles of yoga practice.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📦</div>
+                        <h3>Free Shipping</h3>
+                        <p>Free carbon-neutral shipping on all orders over $200.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Wild Form Yoga</h4>
+                    <p>Yoga mats that shape conservation. 10% of every purchase supports wildlife protection.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Join our community for updates on new designs and conservation impact.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wild Form Yoga. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopify Buy Button SDK -->
+    <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
