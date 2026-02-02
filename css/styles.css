@@ -1110,7 +1110,7 @@ h2.section-title {
 
 .bundle-option img {
     width: 100%;
-    height: 250px;
+    height: 320px;
     object-fit: cover;
     margin-bottom: var(--spacing-xs);
 }
