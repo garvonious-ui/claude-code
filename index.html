@@ -1,207 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild Form Yoga - Yoga That Shapes the Wild</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/jpeg" href="images/panda.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Form Yoga — Premium Animal-Shaped Yoga Mats for Kids &amp; Adults</title>
+  <meta name="description" content="Wild Form mats are shaped like endangered animals, made from premium natural rubber, and 10% of every sale goes directly to protecting the species it depicts. Available for kids and adults.">
+  <meta name="keywords" content="kids yoga mat, animal yoga mat, endangered species, conservation yoga, natural rubber yoga mat, kids fitness, family yoga, eco friendly yoga mat">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wild Form Yoga — The yoga mat your kid won't stop talking about">
+  <meta property="og:description" content="Animal-shaped yoga mats made from premium natural rubber. 10% of every sale protects endangered species.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/panda.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@300;400;500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Wild Form Yoga",
+    "description": "Premium animal-shaped yoga mats for kids and adults. 10% of every sale protects endangered species.",
+    "url": "https://wildformyoga.com",
+    "logo": "images/panda.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "wildformus@gmail.com",
+      "contactType": "customer service"
+    }
+  }
+  </script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">Wild Form Yoga</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <video class="hero-video" autoplay muted loop playsinline>
-                <source src="videos/hero-video.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>Yoga That Shapes the Wild</h1>
-                <p class="hero-subtitle">Premium yoga mats inspired by endangered species. Every practice supports conservation.</p>
-                <a href="shop.html" class="btn btn-primary">Shop Collection</a>
-            </div>
-        </section>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
 
-        <!-- Mission Banner -->
-        <section class="mission-banner">
-            <div class="container">
-                <p class="mission-text">
-                    <span class="mission-highlight">10% of every sale</span> supports wildlife conservation organizations worldwide
-                </p>
-            </div>
-        </section>
+  <!-- ====================================================================
+       1. ANNOUNCEMENT BAR
+       ==================================================================== -->
+  <div class="announcement-bar" role="banner" aria-label="Promotional announcements">
+    <div class="container">
+      <div class="announcement-bar__track" aria-live="polite">
+        <p class="announcement-bar__message is-active">
+          10% of every sale protects endangered species. <a href="#kids-mats">Shop the collection &rarr;</a>
+        </p>
+        <p class="announcement-bar__message">
+          Free shipping on all bundles. Practice together. Protect together. <a href="#bundles">Shop bundles &rarr;</a>
+        </p>
+        <p class="announcement-bar__message">
+          New: Parent + Child matching bundles are here. <a href="#bundles">See bundles &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
-        <!-- About Preview -->
-        <section class="about-preview">
-            <div class="container">
-                <div class="about-content">
-                    <h2>More Than a Mat</h2>
-                    <p>Wild Form Yoga was born from a simple belief: our yoga practice can extend beyond the mat to make a real difference in the world. Each of our mats is shaped like an endangered animal, serving as a daily reminder of the beautiful creatures that share our planet—and our responsibility to protect them.</p>
-                    <a href="shop.html" class="btn btn-primary">Shop Wild Form</a>
-                </div>
-            </div>
-        </section>
+  <!-- ====================================================================
+       2. NAVIGATION
+       ==================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#" class="nav__logo" aria-label="Wild Form Yoga home">
+          <img src="images/logo.png" alt="Wild Form Yoga" class="nav__logo-img" loading="eager">
+        </a>
 
-        <!-- Featured Products -->
-        <section class="featured-products">
-            <div class="product-grid-full">
-                <a href="shop.html" class="product-tile">
-                    <img src="images/tiger.jpg" alt="Tiger Mat">
-                    <div class="product-overlay">
-                        <p class="product-brand">WILD FORM YOGA</p>
-                        <h3 class="product-name">Tiger Mat</h3>
-                    </div>
-                </a>
-
-                <a href="shop.html" class="product-tile">
-                    <img src="images/panda.jpg" alt="Panda Mat">
-                    <div class="product-overlay">
-                        <p class="product-brand">WILD FORM YOGA</p>
-                        <h3 class="product-name">Panda Mat</h3>
-                    </div>
-                </a>
-
-                <a href="shop.html" class="product-tile">
-                    <img src="images/gorilla.jpg" alt="Gorilla Mat">
-                    <div class="product-overlay">
-                        <p class="product-brand">WILD FORM YOGA</p>
-                        <h3 class="product-name">Gorilla Mat</h3>
-                    </div>
-                </a>
-
-                <a href="shop.html" class="product-tile">
-                    <img src="images/aztec-tiger-2.png" alt="Aztec Tiger Mat">
-                    <div class="product-overlay">
-                        <p class="product-brand">WILD FORM YOGA</p>
-                        <h3 class="product-name">Aztec Tiger Mat</h3>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Reviews Section -->
-            <div class="reviews-section">
-                <h2 class="reviews-header">Tested By Teachers, Proven In The Wild</h2>
-                <div class="reviews-carousel">
-                    <div class="review active">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">The best mat you will ever use. It feels amazing and looks beautiful! Worth every penny.</p>
-                        <p class="review-author">— Suzanne B</p>
-                    </div>
-                    <div class="review">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">I get compliments every time I bring this mat to class. Plus knowing my purchase helps wildlife makes it even better.</p>
-                        <p class="review-author">— Michael T</p>
-                    </div>
-                    <div class="review">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Superior quality and a mission I can get behind. The gorilla mat is absolutely stunning.</p>
-                        <p class="review-author">— Jennifer K</p>
-                    </div>
-                    <div class="review">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Finally a yoga mat that's as unique as my practice. The grip is incredible and it sparks so much joy.</p>
-                        <p class="review-author">— David R</p>
-                    </div>
-                </div>
-                <div class="reviews-nav">
-                    <button class="review-btn prev" aria-label="Previous review">←</button>
-                    <div class="review-dots"></div>
-                    <button class="review-btn next" aria-label="Next review">→</button>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Conservation Partners Section -->
-        <section class="partners-hero">
-            <div class="partners-hero-overlay"></div>
-            <div class="partners-hero-content">
-                <h2>Our Conservation Partners</h2>
-                <p class="partners-subtitle">Together, we're protecting endangered species worldwide</p>
-                <div class="partners-logos">
-                    <div class="partner-logo-placeholder">Partner Logo</div>
-                    <div class="partner-logo-placeholder">Partner Logo</div>
-                    <div class="partner-logo-placeholder">Partner Logo</div>
-                    <div class="partner-logo-placeholder">Partner Logo</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature CTA Section -->
-        <section class="feature-cta">
-            <div class="feature-cta-image">
-                <img src="images/feature-cta.jpg" alt="Yoga practice on Wild Form mat">
-            </div>
-            <div class="feature-cta-content">
-                <p class="feature-cta-subtitle">PRACTICE WITH PURPOSE</p>
-                <h2 class="feature-cta-headline">Shape Your Flow. Protect the Wild.</h2>
-                <p class="feature-cta-text">Every Wild Form mat is crafted from eco-friendly materials and shaped like the endangered species we're working to protect. 10% of each purchase goes directly to conservation efforts—so every sun salutation supports the wild.</p>
-                <a href="shop.html" class="btn btn-primary">Shop Now</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h4>Wild Form Yoga</h4>
-                    <p>Yoga mats that shape conservation. 10% of every purchase supports wildlife protection.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <p>Join our community for updates on new designs and conservation impact.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Wild Form Yoga. All rights reserved.</p>
-            </div>
+        <div class="nav__links" id="nav-links" role="menubar">
+          <a href="#kids-mats" class="nav__link" role="menuitem">Kids Mats</a>
+          <a href="#bundles" class="nav__link" role="menuitem">Adult Mats</a>
+          <a href="#bundles" class="nav__link" role="menuitem">Bundles</a>
+          <a href="#mission" class="nav__link" role="menuitem">Our Mission</a>
+          <a href="#about" class="nav__link" role="menuitem">About Us</a>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <div class="nav__right" style="display:flex;align-items:center;gap:var(--space-4);">
+          <a href="#kids-mats" class="nav__cart" aria-label="Shopping cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="nav__cart-count" aria-label="0 items">0</span>
+          </a>
+
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="nav__overlay" id="nav-overlay"></div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         3. HERO SECTION
+         ==================================================================== -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline poster="images/hero.jpg" aria-hidden="true">
+          <source src="videos/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <h1>The yoga mat your kid won't stop talking about&mdash;and&nbsp;it protects real wildlife.</h1>
+          <p class="hero__subtitle">
+            Wild Form mats are shaped like endangered animals, made from premium natural rubber, and 10% of every sale goes directly to protecting the species it depicts. Available for kids and adults&mdash;because the best practices are shared.
+          </p>
+          <div class="hero__actions">
+            <a href="#kids-mats" class="btn btn--primary btn--lg">Shop the Collection</a>
+            <a href="#mission" class="btn btn--outline-light btn--lg">Learn Our Mission</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. BRAND PROOF STRIP
+         ==================================================================== -->
+    <div class="proof-strip" aria-label="Conservation partners">
+      <div class="container">
+        <p class="proof-strip__label">Conservation &amp; Media Partners</p>
+        <div class="proof-strip__logos reveal reveal-stagger">
+          <div class="proof-strip__logo-placeholder">WWF</div>
+          <div class="proof-strip__logo-placeholder">Dian Fossey Gorilla Fund</div>
+          <div class="proof-strip__logo-placeholder">African Wildlife Foundation</div>
+          <div class="proof-strip__logo-placeholder">1% for the Planet</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         5. BENEFIT SECTION 1 — FOR THE CHILD
+         ==================================================================== -->
+    <section class="section" id="for-kids" aria-labelledby="benefit-kids-heading">
+      <div class="container">
+        <div class="benefit__split">
+          <div class="reveal">
+            <div class="benefit__header">
+              <h2 id="benefit-kids-heading">Designed for little yogis with big imaginations.</h2>
+            </div>
+            <p class="benefit__body">
+              Every Wild Form kids mat is shaped like an endangered animal&mdash;from the Sea Turtle to the Bengal Tiger. Made from premium natural rubber with a microfiber suede top, 5mm thick, non-slip, and completely free of toxic chemicals. Safe for kids. Built to last through years of warrior poses, giggles, and growing up. Your child doesn't just practice on their mat&mdash;they practice <em>with</em> their animal.
+            </p>
+            <div class="benefit__grid">
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128062;</div>
+                <div class="benefit__point-text">
+                  <h4>Animal-shaped silhouette</h4>
+                  <p>No other mat looks like this. Each shape is a real endangered species.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#127807;</div>
+                <div class="benefit__point-text">
+                  <h4>Non-toxic, eco-friendly inks</h4>
+                  <p>Safe for kids, better for the planet. No PVC, phthalates, or heavy metals.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128170;</div>
+                <div class="benefit__point-text">
+                  <h4>Premium natural rubber + suede</h4>
+                  <p>Non-slip, moisture-wicking, 5mm thick. Built to last through years of play.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128207;</div>
+                <div class="benefit__point-text">
+                  <h4>Kid-sized proportions</h4>
+                  <p>Proportioned for smaller bodies, not just a shrunken adult mat.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#kids-mats" class="link-arrow">See the kids collection</a>
+          </div>
+          <div class="benefit__image-container reveal reveal-delay-2">
+            <img src="images/tiger-2.jpg" alt="Close-up of a Wild Form Bengal Tiger yoga mat showing the detailed animal-shaped design and premium suede texture" width="1200" height="900" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. PRODUCT GRID — KIDS MATS
+         ==================================================================== -->
+    <section class="section section--off-white" id="kids-mats" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="products__header reveal">
+          <h2 id="products-heading">Choose their species. Start their journey.</h2>
+          <p>Every mat sold protects the animal it depicts. Collect the pack, save the species.</p>
+        </div>
+
+        <div class="product-grid reveal-stagger reveal">
+          <!-- Sea Turtle -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">
+                <span class="img-placeholder__icon">&#128034;</span>
+                <span>[Insert Sea Turtle Mat Image]</span>
+              </div>
+              <span class="product-card__badge">Kids</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__species">Sea Turtle Mat</h3>
+              <p class="product-card__tagline">Slow down. Breathe. Protect the sea.</p>
+              <p class="product-card__price">$89.00</p>
+              <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Bengal Tiger -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="images/tiger.jpg" alt="Wild Form Bengal Tiger kids yoga mat — orange and black animal-shaped design on natural rubber" width="1200" height="900" loading="lazy">
+              <span class="product-card__badge">Kids</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__species">Bengal Tiger Mat</h3>
+              <p class="product-card__tagline">Find your inner tiger. Fund the real one.</p>
+              <p class="product-card__price">$89.00</p>
+              <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Plains Zebra -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">
+                <span class="img-placeholder__icon">&#129427;</span>
+                <span>[Insert Plains Zebra Mat Image]</span>
+              </div>
+              <span class="product-card__badge">Kids</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__species">Plains Zebra Mat</h3>
+              <p class="product-card__tagline">Stand out from the herd. Stand up for them.</p>
+              <p class="product-card__price">$89.00</p>
+              <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- African Lion -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">
+                <span class="img-placeholder__icon">&#129409;</span>
+                <span>[Insert African Lion Mat Image]</span>
+              </div>
+              <span class="product-card__badge">Kids</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__species">African Lion Mat</h3>
+              <p class="product-card__tagline">Be brave. Be still. Protect the pride.</p>
+              <p class="product-card__price">$89.00</p>
+              <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. BENEFIT SECTION 2 — CONSERVATION MISSION
+         ==================================================================== -->
+    <section class="section section--forest" id="mission" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="benefit__split">
+          <div class="benefit__image-container reveal">
+            <img src="images/gorilla.jpg" alt="Mountain gorilla in its natural habitat — conservation photography representing Dian Fossey Gorilla Fund partnership" width="1200" height="900" loading="lazy">
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="benefit__header">
+              <h2 id="mission-heading">The purchase that keeps giving&mdash;to your family and the wild.</h2>
+            </div>
+            <p class="benefit__body">
+              10% of every Wild Form sale goes directly to species-specific conservation organizations. When your child practices on the Tiger mat, they're funding WWF Tigers Alive. When they unroll the Sea Turtle, they're protecting ocean habitats. Every mat comes with a Conservation Impact Card that tells your child exactly which animal they're helping&mdash;turning yoga into a daily lesson in empathy, responsibility, and connection to the natural world. This isn't a mat. It's a conversation. A practice. And a promise.
+            </p>
+            <div class="benefit__grid">
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#127758;</div>
+                <div class="benefit__point-text">
+                  <h4>10% of net revenue donated</h4>
+                  <p>Every purchase directly funds wildlife conservation.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128005;</div>
+                <div class="benefit__point-text">
+                  <h4>Species-specific partners</h4>
+                  <p>WWF Tigers Alive, WWF Panda Program, Dian Fossey Gorilla Fund, African Wildlife Foundation.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128203;</div>
+                <div class="benefit__point-text">
+                  <h4>Conservation Impact Card</h4>
+                  <p>Included with every purchase. Your child learns which animal they protect.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#127919;</div>
+                <div class="benefit__point-text">
+                  <h4>1% for the Planet goal</h4>
+                  <p>Committed to joining within 18 months of launch.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#about" class="link-arrow" style="color: var(--sage);">Learn about our partners</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. PARENT + CHILD BUNDLE FEATURE BLOCK
+         ==================================================================== -->
+    <section class="section" id="bundles" aria-labelledby="bundle-heading">
+      <div class="container">
+        <div class="bundle__split">
+          <div class="bundle__image reveal">
+            <img src="images/feature-cta.jpg" alt="Parent and child practicing yoga side by side on matching Wild Form animal mats outdoors" width="642" height="428" loading="lazy">
+          </div>
+          <div class="bundle__content reveal reveal-delay-2">
+            <h2 id="bundle-heading">Practice together. Protect together.</h2>
+            <p>
+              Wild Form is the only yoga mat brand that offers matching parent + child designs. Pick the same species, roll out side by side, and share a practice that's about more than flexibility&mdash;it's about showing your kids that what they do matters.
+            </p>
+            <div class="bundle__options">
+              <div class="bundle__option">
+                <div class="bundle__option-info">
+                  <span class="bundle__option-name">Parent + Child Bundle</span>
+                  <span class="bundle__option-desc">1 adult + 1 kids mat, same species</span>
+                </div>
+                <span class="bundle__option-price">$159.00</span>
+              </div>
+              <div class="bundle__option">
+                <div class="bundle__option-info">
+                  <span class="bundle__option-name">Sibling Pack</span>
+                  <span class="bundle__option-desc">2 kids mats, different species</span>
+                </div>
+                <span class="bundle__option-price">$149.00</span>
+              </div>
+              <div class="bundle__option">
+                <div class="bundle__option-info">
+                  <span class="bundle__option-name">Family Pack</span>
+                  <span class="bundle__option-desc">1 adult + 2 kids mats</span>
+                </div>
+                <span class="bundle__option-price">$219.00</span>
+              </div>
+              <div class="bundle__option">
+                <div class="bundle__option-info">
+                  <span class="bundle__option-name">Collect the Pack</span>
+                  <span class="bundle__option-desc">All 4 kids species</span>
+                </div>
+                <span class="bundle__option-price">$299.00</span>
+              </div>
+            </div>
+            <a href="#kids-mats" class="btn btn--kids btn--lg">Build Your Family Pack</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. BENEFIT SECTION 3 — FOR THE FAMILY
+         ==================================================================== -->
+    <section class="section section--off-white" id="family" aria-labelledby="family-heading">
+      <div class="container">
+        <div class="benefit__split">
+          <div class="reveal">
+            <div class="benefit__header">
+              <h2 id="family-heading">Practice together. Protect together.</h2>
+            </div>
+            <div class="benefit__grid">
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128106;</div>
+                <div class="benefit__point-text">
+                  <h4>Matching adult + kids mats</h4>
+                  <p>Same species, same design, different sizes. Roll out side by side.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#128176;</div>
+                <div class="benefit__point-text">
+                  <h4>Bundle savings</h4>
+                  <p>Save when you buy together. Bundles start at $149.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#127873;</div>
+                <div class="benefit__point-text">
+                  <h4>The meaningful gift</h4>
+                  <p>Birthdays, holidays, or "just because." A gift that teaches and lasts.</p>
+                </div>
+              </div>
+              <div class="benefit__point">
+                <div class="benefit__icon" aria-hidden="true">&#127979;</div>
+                <div class="benefit__point-text">
+                  <h4>Classroom-ready</h4>
+                  <p>Schools and studios love them. Bulk pricing available.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefit__image-container reveal reveal-delay-2">
+            <img src="images/panda-2.jpg" alt="Giant panda in its natural bamboo forest habitat — representing the WWF Panda Program partnership" width="1200" height="900" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. SOCIAL PROOF / REVIEWS
+         ==================================================================== -->
+    <section class="section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="reviews__header reveal">
+          <h2 id="reviews-heading">Tested by teachers. Loved by kids. Trusted&nbsp;by&nbsp;parents.</h2>
+        </div>
+
+        <div class="reviews__grid reveal-stagger reveal">
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text">
+              &ldquo;I've been teaching kids yoga for 8 years and these are hands down the best mats I've ever used in class. The kids fight over who gets the tiger.&rdquo;
+            </p>
+            <p class="review-card__author">&mdash; Sarah M.</p>
+            <p class="review-card__role">Kids Yoga Instructor</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text">
+              &ldquo;My daughter saw the Panda mat and wouldn't let it go. She now asks to do yoga every morning before school. The quality is incredible&mdash;this is not a cheap Amazon mat.&rdquo;
+            </p>
+            <p class="review-card__author">&mdash; Jessica R.</p>
+            <p class="review-card__role">Mom of 2</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text">
+              &ldquo;Bought the Parent + Child Tiger bundle for my sister and her son. She cried. Best gift I've ever given.&rdquo;
+            </p>
+            <p class="review-card__author">&mdash; Michael T.</p>
+            <p class="review-card__role">Gift Giver</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text">
+              &ldquo;We replaced all our kids mats with Wild Form. The conservation mission aligns perfectly with what we teach, and the quality is unmatched.&rdquo;
+            </p>
+            <p class="review-card__author">&mdash; Amanda L.</p>
+            <p class="review-card__role">Studio Owner</p>
+          </article>
+        </div>
+
+        <div class="proof-badges reveal">
+          <span class="proof-badge">10% of Every Sale to Conservation</span>
+          <span class="proof-badge">Premium Natural Rubber &middot; Non-Toxic</span>
+          <span class="proof-badge">Family-Founded in Miami</span>
+          <span class="proof-badge">3+ Conservation Partners</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         11. FAQ SECTION
+         ==================================================================== -->
+    <section class="section section--off-white" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="faq__header reveal">
+          <h2 id="faq-heading">Questions? We've got answers.</h2>
+        </div>
+
+        <div class="faq__list reveal" role="list">
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              What ages are the kids mats designed for?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Our kids mats are designed for ages 3&ndash;12. They're proportioned specifically for smaller bodies&mdash;not just shrunken adult mats. The dimensions, thickness, and weight are all optimized for children's comfort and safety during practice.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              What are the mats made of?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Premium natural rubber base with a microfiber suede top. 5mm thick for optimal cushioning and stability. We use non-toxic, eco-friendly inks for all designs. Absolutely no PVC, phthalates, or heavy metals. Safe enough for the youngest yogis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              How does the conservation donation work?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>10% of net revenue from every sale goes directly to species-specific conservation organizations. Buy a Tiger mat, and you fund WWF Tigers Alive. Buy a Sea Turtle mat, and you fund ocean habitat protection. Every mat includes a Conservation Impact Card that explains exactly which organization receives the donation and how it helps.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              Can I get matching mats for my child and me?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Yes! Our Parent + Child Bundle lets you pick the same species in both adult and kids sizes. Same beautiful design, proportioned for each body. We also offer Sibling Packs and Family Packs for families who want to practice together.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              Do you offer bulk pricing for schools or studios?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Yes, we offer special pricing for schools, studios, and organizations. Contact us at <a href="mailto:wildformus@gmail.com" style="color:var(--terracotta); text-decoration:underline;">wildformus@gmail.com</a> and we'll put together a custom package for your needs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              Where are the mats made?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Our mats are manufactured overseas using premium natural rubber and eco-friendly production processes, then fulfilled from our distribution center in Los Angeles, California.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              When will you launch new species?
+              <span class="faq__icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>We have Elephant, Snow Leopard, Orangutan, and Polar Bear in the development pipeline. Join our email list to get early access to new species drops and exclusive launch pricing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         12. FINAL CTA BLOCK
+         ==================================================================== -->
+    <section class="section final-cta" aria-labelledby="final-cta-heading">
+      <div class="container">
+        <div class="reveal">
+          <h2 id="final-cta-heading">Choose your species. Start protecting.</h2>
+          <p>Every mat sold protects wildlife. Every practice raises awareness. Together, we move for conservation.</p>
+          <a href="#kids-mats" class="btn btn--primary btn--lg">Shop the Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         13. EMAIL CAPTURE
+         ==================================================================== -->
+    <section class="section email-capture" id="about" aria-labelledby="email-heading">
+      <div class="container">
+        <h2 id="email-heading">Join the pack.</h2>
+        <p>Get early access to new species drops, exclusive launch pricing, and conservation updates&mdash;straight to your inbox.</p>
+
+        <form class="email-form" id="email-form" aria-label="Newsletter signup">
+          <label for="email-input" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+          <input
+            type="email"
+            id="email-input"
+            class="email-form__input"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+            aria-label="Email address"
+          >
+          <button type="submit" class="email-form__btn">I'm In</button>
+        </form>
+        <p class="email-form__success" id="email-success" role="status">Welcome to the pack! Check your inbox.</p>
+        <p class="email-capture__fine-print">We send 1&ndash;2 emails per month. No spam. Just mats, missions, and movement.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       14. FOOTER
+       ==================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div class="footer__col">
+          <p class="footer__brand-logo">Wild Form &middot; Yoga</p>
+          <p class="footer__brand-tagline">Practice with Purpose. Move for Conservation.</p>
+          <p class="footer__brand-desc">
+            Wild Form Yoga creates premium animal-shaped yoga mats for kids and adults. Family-founded in Miami, we donate 10% of every sale to species-specific conservation organizations. Every mat is a practice, a promise, and a conversation about protecting our planet's most vulnerable species.
+          </p>
+        </div>
+
+        <!-- Shop Column -->
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <nav class="footer__links" aria-label="Shop links">
+            <a href="#kids-mats" class="footer__link">Kids Mats</a>
+            <a href="#bundles" class="footer__link">Adult Mats</a>
+            <a href="#bundles" class="footer__link">Bundles</a>
+            <a href="#kids-mats" class="footer__link">All Products</a>
+          </nav>
+        </div>
+
+        <!-- Company Column -->
+        <div class="footer__col">
+          <h4>Company</h4>
+          <nav class="footer__links" aria-label="Company links">
+            <a href="#mission" class="footer__link">Our Mission</a>
+            <a href="#about" class="footer__link">About Us</a>
+            <a href="#mission" class="footer__link">Conservation Partners</a>
+            <a href="mailto:wildformus@gmail.com" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Connect Column -->
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <nav class="footer__links" aria-label="Social links">
+            <a href="mailto:wildformus@gmail.com" class="footer__link">wildformus@gmail.com</a>
+          </nav>
+          <div class="footer__social">
+            <!-- Instagram -->
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- TikTok -->
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.04a6.37 6.37 0 0 0-.88-.07 6.26 6.26 0 0 0 0 12.52 6.27 6.27 0 0 0 6.27-6.27V8.55a8.19 8.19 0 0 0 3.83.95V6.69z"/></svg>
+            </a>
+            <!-- Pinterest -->
+            <a href="#" class="footer__social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12a4 4 0 1 1 8 0c0 2.5-1.5 5-4 5s-2.5-1-2.5-1l-1 4"/><circle cx="12" cy="12" r="10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Wild Form Yoga. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
